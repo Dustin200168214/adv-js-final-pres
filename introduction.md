@@ -58,4 +58,4 @@
 ```
 
 Link To REPL:
-  * [Live Introduction](https://svelte.dev/repl/hello-world?version=3.16.0)
+  * [Live Introduction](https://svelte.dev/repl/c62c483eb229400ea3e33914a6656d21?version=3.16.0)
