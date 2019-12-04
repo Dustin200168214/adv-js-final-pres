@@ -11,7 +11,7 @@ This app lets the user input a `number` and then checks if the number is equal, 
 
 ```html
 <h1>{message}</h1>
-<input type="text" bind:value={number}>
+<input type="number" bind:value={number}>
 <button on:click={check}>Check</button>
 <script>
 	let message = 'Guess a number!'
@@ -19,14 +19,12 @@ This app lets the user input a `number` and then checks if the number is equal, 
 	let answer = 75
 	// Check if the guessed number is correct
 	function check() {
-		if(number == answer){
-			message = "Correct"
-		} else if(number < answer ) {
+		if (number < answer ) {
 			message = "Higher"
 		} else if (number > answer) {
 			message = "Lower"
 		} else {
-			message = "Guess a number!"
+			message = "Correct"
 		}
 	}
 </script>
