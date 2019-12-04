@@ -9,21 +9,19 @@ An easier way to code the guess the number game presented by Ric through the use
 
 ```html
 <script>
-	let number 
+	let number = 0 
 	let answer = 75
 </script>
 <h1>
-{#if number == answer }
-	Winner
-{:else if number < answer }
+{#if number < answer }
 	Higher
 {:else if number > answer }
 	Lower
 {:else }
-	Guess a Number
+	Winner
 {/if}
 </h1>
-<input type="text" bind:value={number}>
+<input type="number" bind:value={number}>
 ```
 
 ## Each blocks
